@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4</title>
+	<script type="text/javascript">
+		function calculate()
+		{
+			var first_number=parseInt(document.myform.first_number.value) ;
+			var second_number=parseInt(document.myform.second_number.value);
+			console.log(first_number,second_number);
+			var sum=first_number+second_number;
+			console.log(sum);
+			document.myform.sum.value=sum;
+
+			
+		}
+	</script>
+</head>
+<body>
+	<h1>Sum of Two number</h1>
+	<form name='myform'>
+		First Number: <input type="number " name="first_number"><br>
+		Second Number: <input type="number " name="second_number"><br>
+		<input type="button" value="Calculate" onclick="calculate()"><br><br>
+		sum:<input type="number" name="sum"><br><br>
+		
+
+	</form>
+</body>
+</html>

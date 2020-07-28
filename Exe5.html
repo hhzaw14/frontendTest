@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 5</title>
+	<script type="text/javascript">
+		function winorlose() {
+			var win=parseInt(document.myform.win.value);
+			var win=parseInt(document.myform.win.value);
+				var win=parseInt(document.myform.win.value);
+
+					document.myform.total.value((win*3)+(draw*1)+(lose*0));
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<h1>Enter your result</h1>
+		win: <input type="number" name="win"><br>
+		Draw: <input type="number" name="draw"><br>
+		Lose: <input type="number" name="lose">
+		<input type="button " value="caculator" onclick="winorlose()"><br>
+		Result:
+		<input type="number" name="total">
+	</form>
+</body>
+</html>
